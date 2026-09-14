@@ -3,28 +3,31 @@
 <head>
   <meta charset="UTF-8">
 
-  <title>Community Resources | Devine Living Solutions</title>
+  <title>Submit a Housing Referral | Devine Living Solutions</title>
 
   <meta
     name="description"
-    content="Find helpful South Carolina and national resources for housing, veterans, behavioral health, Social Security, Medicaid, transportation, and community support."
+    content="Submit a housing referral to Devine Living Solutions for residential group housing in Columbia, South Carolina and surrounding communities."
   >
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="canonical" href="https://www.devinelivingsolutions.com/resources.html">
+  <link rel="canonical" href="https://www.devinelivingsolutions.com/referral.html">
 
-  <meta property="og:title" content="Community Resources | Devine Living Solutions">
+  <meta property="og:title" content="Submit a Housing Referral | Devine Living Solutions">
+
   <meta
     property="og:description"
-    content="Helpful housing, veterans, health, benefits, transportation, and community resources for residents, families, and referral partners."
+    content="Refer an adult for residential group housing with Devine Living Solutions in Columbia, South Carolina."
   >
+
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://www.devinelivingsolutions.com/resources.html">
+  <meta property="og:url" content="https://www.devinelivingsolutions.com/referral.html">
   <meta property="og:image" content="https://www.devinelivingsolutions.com/images/community-support.jpg">
 
   <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-VE01S9Q42P"></script>
+
   <script>
     window.dataLayer = window.dataLayer || [];
 
@@ -38,321 +41,465 @@
 
   <style>
     :root {
-      --navy:#1C3F60;
-      --green:#3B7A57;
-      --beige:#F9EFE4;
-      --gold:#FFD166;
-      --white:#FFFFFF;
-      --text:#17324A;
-      --muted:#536575;
-      --shadow:0 8px 24px rgba(28,63,96,.10);
-      --max:1200px;
+      --navy: #1C3F60;
+      --green: #3B7A57;
+      --beige: #F9EFE4;
+      --gold: #FFD166;
+      --white: #FFFFFF;
+      --text: #17324A;
+      --muted: #536575;
+      --red: #A12626;
+      --border: #CBD4DC;
+      --shadow: 0 8px 24px rgba(28, 63, 96, 0.10);
+      --max: 1200px;
     }
 
     * {
-      box-sizing:border-box;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
     }
 
     body {
-      margin:0;
-      font-family:Arial, Helvetica, sans-serif;
-      background:var(--beige);
-      color:var(--text);
-      line-height:1.65;
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--beige);
+      color: var(--text);
+      line-height: 1.65;
+    }
+
+    img {
+      max-width: 100%;
     }
 
     header {
-      background:var(--navy);
-      padding:.7rem 1rem;
+      background: var(--navy);
+      padding: 0.7rem 1rem;
     }
 
     nav {
-      max-width:var(--max);
-      margin:auto;
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-      gap:1rem;
+      max-width: var(--max);
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
     }
 
     .logo-link {
-      display:inline-flex;
-      align-items:center;
-      flex-shrink:0;
+      display: inline-flex;
+      align-items: center;
+      flex-shrink: 0;
     }
 
     .logo-link img {
-      height:68px;
-      width:auto;
-      background:var(--white);
-      padding:5px;
-      border-radius:8px;
-      display:block;
+      height: 68px;
+      width: auto;
+      background: var(--white);
+      padding: 5px;
+      border-radius: 8px;
+      display: block;
     }
 
     .nav-links {
-      display:flex;
-      align-items:center;
-      justify-content:flex-end;
-      flex-wrap:wrap;
-      gap:.35rem;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      flex-wrap: wrap;
+      gap: 0.35rem;
     }
 
     .nav-links a {
-      color:var(--white);
-      text-decoration:none;
-      font-weight:700;
-      padding:.55rem .7rem;
-      border-radius:6px;
+      color: var(--white);
+      text-decoration: none;
+      font-weight: 700;
+      padding: 0.55rem 0.7rem;
+      border-radius: 6px;
     }
 
     .nav-links a:hover,
     .nav-links a:focus {
-      color:var(--gold);
-      background:rgba(255,255,255,.06);
+      color: var(--gold);
+      background: rgba(255, 255, 255, 0.06);
     }
 
     .nav-links .nav-cta {
-      background:var(--green);
+      background: var(--green);
+      color: var(--white);
+      padding: 0.6rem 1rem;
     }
 
     .nav-links .nav-cta:hover,
     .nav-links .nav-cta:focus {
-      background:var(--gold);
-      color:var(--navy);
+      background: var(--gold);
+      color: var(--navy);
     }
 
     .page-hero {
-      background:url("images/community-support.jpg") center center / cover no-repeat;
-      min-height:430px;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      padding:3rem 1rem;
+      background: url("images/community-support.jpg") center center / cover no-repeat;
+      min-height: 470px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 3rem 1rem;
     }
 
     .page-hero-inner {
-      max-width:850px;
-      width:100%;
-      background:rgba(255,255,255,.93);
-      padding:2rem;
-      border-radius:12px;
-      box-shadow:var(--shadow);
-      text-align:center;
+      max-width: 850px;
+      width: 100%;
+      background: rgba(255, 255, 255, 0.93);
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: var(--shadow);
+      text-align: center;
     }
 
     .page-hero h1 {
-      margin:0;
-      color:var(--green);
-      font-size:clamp(2.2rem,4vw,3.7rem);
-      line-height:1.15;
+      margin: 0;
+      color: var(--green);
+      font-size: clamp(2.2rem, 4vw, 3.7rem);
+      line-height: 1.15;
     }
 
     .page-hero p {
-      margin:1rem auto 0;
-      max-width:760px;
-      color:var(--navy);
-      font-size:1.1rem;
+      margin: 1rem auto 0;
+      max-width: 760px;
+      color: var(--navy);
+      font-size: 1.1rem;
+    }
+
+    .housing-only {
+      display: inline-block;
+      margin-top: 1.25rem;
+      padding: 0.65rem 1rem;
+      background: var(--gold);
+      color: var(--navy);
+      border-radius: 7px;
+      font-weight: 800;
+    }
+
+    main {
+      display: block;
     }
 
     .section {
-      max-width:var(--max);
-      margin:auto;
-      padding:4rem 1rem;
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 4rem 1rem;
     }
 
     .section-heading {
-      text-align:center;
-      max-width:800px;
-      margin:0 auto 2rem;
+      text-align: center;
+      max-width: 800px;
+      margin: 0 auto 2rem;
     }
 
     .section-heading h2 {
-      margin:0;
-      color:var(--green);
-      font-size:clamp(1.8rem,3vw,2.5rem);
+      margin: 0;
+      color: var(--green);
+      font-size: clamp(1.8rem, 3vw, 2.5rem);
     }
 
     .section-heading p {
-      color:var(--muted);
+      margin: 0.75rem 0 0;
+      color: var(--muted);
     }
 
-    .resource-grid {
-      display:grid;
-      grid-template-columns:repeat(3,minmax(0,1fr));
-      gap:1.25rem;
+    .card {
+      background: var(--white);
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: var(--shadow);
+      margin-bottom: 1.5rem;
     }
 
-    .resource-card {
-      background:var(--white);
-      padding:1.6rem;
-      border-radius:10px;
-      box-shadow:var(--shadow);
-      border-top:6px solid var(--green);
+    .card h2 {
+      margin-top: 0;
+      color: var(--green);
     }
 
-    .resource-card h3 {
-      margin-top:0;
-      color:var(--green);
+    .referral-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 1.25rem;
     }
 
-    .resource-card p {
-      margin-bottom:1rem;
-    }
-
-    .resource-card a {
-      color:var(--navy);
-      font-weight:700;
-      word-break:break-word;
-    }
-
-    .resource-card a:hover,
-    .resource-card a:focus {
-      color:var(--green);
+    .referral-source {
+      background: var(--white);
+      padding: 1.4rem;
+      border-radius: 10px;
+      box-shadow: var(--shadow);
+      border-top: 6px solid var(--green);
+      text-align: center;
+      font-weight: 700;
     }
 
     .notice {
-      background:var(--white);
-      padding:2rem;
-      border-radius:10px;
-      box-shadow:var(--shadow);
-      border-left:8px solid var(--gold);
+      background: var(--white);
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: var(--shadow);
+      border-left: 8px solid var(--gold);
     }
 
     .notice h2 {
-      margin-top:0;
-      color:var(--navy);
+      margin-top: 0;
+      color: var(--navy);
     }
 
-    .cta-section {
-      text-align:center;
-      background:var(--green);
-      color:var(--white);
-      border-radius:12px;
-      padding:3rem 1.5rem;
-      box-shadow:var(--shadow);
+    .notice-red {
+      border-left-color: var(--red);
     }
 
-    .cta-section h2 {
-      margin-top:0;
-      font-size:clamp(1.8rem,3vw,2.5rem);
+    .notice-red h2,
+    .notice-red strong {
+      color: var(--red);
+    }
+
+    form {
+      margin-top: 1rem;
+    }
+
+    fieldset {
+      border: 0;
+      padding: 0;
+      margin: 0 0 2rem;
+    }
+
+    legend {
+      width: 100%;
+      margin-bottom: 1rem;
+      color: var(--green);
+      font-size: 1.4rem;
+      font-weight: 800;
+      border-bottom: 2px solid #E4E9ED;
+      padding-bottom: 0.5rem;
+    }
+
+    .form-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 1rem;
+    }
+
+    .full-width {
+      grid-column: 1 / -1;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 0.35rem;
+      font-weight: 700;
+    }
+
+    input,
+    select,
+    textarea {
+      width: 100%;
+      padding: 0.8rem;
+      border: 1px solid var(--border);
+      border-radius: 7px;
+      background: var(--white);
+      color: var(--text);
+      font: inherit;
+    }
+
+    input:focus,
+    select:focus,
+    textarea:focus {
+      outline: 3px solid rgba(59, 122, 87, 0.18);
+      border-color: var(--green);
+    }
+
+    textarea {
+      min-height: 135px;
+      resize: vertical;
+    }
+
+    .checkbox-row {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.7rem;
+      margin-top: 1rem;
+    }
+
+    .checkbox-row input {
+      width: auto;
+      margin-top: 0.35rem;
+      flex-shrink: 0;
+    }
+
+    .checkbox-row label {
+      margin: 0;
+      font-weight: 600;
+    }
+
+    .hint {
+      color: var(--muted);
+      font-size: 0.92rem;
+      margin: 0.35rem 0 0;
     }
 
     .button-row {
-      display:flex;
-      flex-wrap:wrap;
-      justify-content:center;
-      gap:.85rem;
-      margin-top:1.5rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.85rem;
+      margin-top: 1.5rem;
     }
 
+    button,
     .button {
-      display:inline-block;
-      padding:.85rem 1.35rem;
-      border-radius:7px;
-      text-decoration:none;
-      font-weight:800;
+      display: inline-block;
+      padding: 0.85rem 1.35rem;
+      border: 0;
+      border-radius: 7px;
+      text-decoration: none;
+      font-weight: 800;
+      font: inherit;
+      cursor: pointer;
     }
 
     .button-primary {
-      background:var(--navy);
-      color:var(--white);
+      background: var(--green);
+      color: var(--white);
+    }
+
+    .button-primary:hover,
+    .button-primary:focus {
+      background: var(--gold);
+      color: var(--navy);
     }
 
     .button-secondary {
-      background:var(--white);
-      color:var(--navy);
+      background: var(--navy);
+      color: var(--white);
     }
 
-    .button:hover,
-    .button:focus {
-      background:var(--gold);
-      color:var(--navy);
+    .button-secondary:hover,
+    .button-secondary:focus {
+      background: var(--gold);
+      color: var(--navy);
+    }
+
+    .button-light {
+      background: #E8ECEF;
+      color: var(--navy);
+    }
+
+    .button-light:hover,
+    .button-light:focus {
+      background: #D8DEE3;
+    }
+
+    .email-card {
+      background: var(--navy);
+      color: var(--white);
+      padding: 2.25rem;
+      border-radius: 10px;
+      box-shadow: var(--shadow);
+      text-align: center;
+    }
+
+    .email-card h2 {
+      margin-top: 0;
+      color: var(--gold);
+    }
+
+    .email-card a:not(.button) {
+      color: var(--gold);
     }
 
     footer {
-      background:var(--navy);
-      color:var(--white);
-      padding:2.5rem 1rem 1.5rem;
+      background: var(--navy);
+      color: var(--white);
+      padding: 2.5rem 1rem 1.5rem;
     }
 
     .footer-inner {
-      max-width:var(--max);
-      margin:auto;
-      display:grid;
-      grid-template-columns:1.4fr 1fr 1fr;
-      gap:2rem;
+      max-width: var(--max);
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1.4fr 1fr 1fr;
+      gap: 2rem;
     }
 
     footer h3 {
-      color:var(--gold);
-      margin-top:0;
+      color: var(--gold);
+      margin-top: 0;
     }
 
     footer a {
-      color:var(--white);
-      text-decoration:none;
+      color: var(--white);
+      text-decoration: none;
     }
 
     footer a:hover,
     footer a:focus {
-      color:var(--gold);
+      color: var(--gold);
     }
 
     .footer-links {
-      display:grid;
-      gap:.45rem;
+      display: grid;
+      gap: 0.45rem;
     }
 
     .copyright {
-      max-width:var(--max);
-      margin:2rem auto 0;
-      padding-top:1.25rem;
-      border-top:1px solid rgba(255,255,255,.18);
-      text-align:center;
-      font-size:.95rem;
+      max-width: var(--max);
+      margin: 2rem auto 0;
+      padding-top: 1.25rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.18);
+      text-align: center;
+      font-size: 0.95rem;
     }
 
-    @media (max-width:920px) {
-      .resource-grid {
-        grid-template-columns:repeat(2,minmax(0,1fr));
+    @media (max-width: 920px) {
+      .nav-links a {
+        padding: 0.45rem 0.55rem;
+        font-size: 0.92rem;
+      }
+
+      .referral-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
       }
 
       .footer-inner {
-        grid-template-columns:1fr 1fr;
-      }
-
-      .nav-links a {
-        padding:.45rem .55rem;
-        font-size:.92rem;
+        grid-template-columns: 1fr 1fr;
       }
     }
 
-    @media (max-width:680px) {
+    @media (max-width: 680px) {
       nav {
-        flex-direction:column;
+        flex-direction: column;
+        align-items: center;
       }
 
       .nav-links {
-        justify-content:center;
-      }
-
-      .resource-grid,
-      .footer-inner {
-        grid-template-columns:1fr;
+        justify-content: center;
       }
 
       .page-hero {
-        min-height:360px;
-        padding:2rem 1rem;
+        min-height: 380px;
+        padding: 2rem 1rem;
       }
 
       .page-hero-inner {
-        padding:1.5rem;
+        padding: 1.5rem;
+      }
+
+      .referral-grid,
+      .form-grid,
+      .footer-inner {
+        grid-template-columns: 1fr;
+      }
+
+      .full-width {
+        grid-column: auto;
       }
 
       .section {
-        padding:3rem 1rem;
+        padding: 3rem 1rem;
       }
     }
   </style>
@@ -362,305 +509,533 @@
 
 <header>
   <nav aria-label="Main navigation">
+
     <a class="logo-link" href="index.html">
       <img src="logo.png" alt="Devine Living Solutions logo">
     </a>
 
     <div class="nav-links">
       <a href="index.html">Home</a>
-      <a href="services.html">Services</a>
+      <a href="services.html">Housing &amp; Amenities</a>
       <a href="demographics.html">Who We Serve</a>
-      <a href="our-care.html">Our Care</a>
+      <a href="our-care.html">Our Housing</a>
       <a href="about.html">About</a>
       <a href="faq.html">FAQ</a>
       <a href="resources.html">Resources</a>
       <a href="referral.html">Referral</a>
       <a class="nav-cta" href="contact.html">Contact</a>
     </div>
+
   </nav>
 </header>
 
 <section class="page-hero">
+
   <div class="page-hero-inner">
-    <h1>Community Resources</h1>
+
+    <h1>Submit a Housing Referral</h1>
 
     <p>
-      Helpful links for residents, families, case managers, social workers,
-      veterans, and community referral partners.
+      Use the form below to create a housing referral email for
+      Devine Living Solutions in Columbia, South Carolina.
     </p>
+
+    <div class="housing-only">
+      Housing Only — No Direct Care or Support Services Provided
+    </div>
+
   </div>
+
 </section>
 
 <main>
 
   <section class="section">
-    <div class="notice">
-      <h2>Important Resource Notice</h2>
 
-      <p>
-        These outside resources are provided for general informational purposes.
-        Devine Living Solutions does not control, operate, or guarantee the
-        eligibility requirements, services, availability, or accuracy of
-        third-party organizations.
-      </p>
-
-      <p>
-        Contact the organization directly for current information and assistance.
-      </p>
-    </div>
-  </section>
-
-  <section class="section">
     <div class="section-heading">
-      <h2>Benefits and Government Resources</h2>
+
+      <h2>Who May Submit a Referral?</h2>
 
       <p>
-        Use these links to learn about benefits, eligibility, and public assistance.
+        Housing referrals may come from professional organizations,
+        families, or individuals.
       </p>
-    </div>
-
-    <div class="resource-grid">
-
-      <article class="resource-card">
-        <h3>Social Security Administration</h3>
-        <p>
-          Information about Social Security retirement, disability, SSI,
-          Medicare, and benefit applications.
-        </p>
-        <a href="https://www.ssa.gov/" target="_blank" rel="noopener noreferrer">
-          Visit SSA.gov
-        </a>
-      </article>
-
-      <article class="resource-card">
-        <h3>South Carolina Medicaid</h3>
-        <p>
-          Information about South Carolina Medicaid eligibility, enrollment,
-          benefits, and member services.
-        </p>
-        <a href="https://www.scdhhs.gov/" target="_blank" rel="noopener noreferrer">
-          Visit SCDHHS.gov
-        </a>
-      </article>
-
-      <article class="resource-card">
-        <h3>South Carolina Department of Social Services</h3>
-        <p>
-          Information about SNAP, family assistance, adult services,
-          and other support programs.
-        </p>
-        <a href="https://dss.sc.gov/" target="_blank" rel="noopener noreferrer">
-          Visit DSS.SC.gov
-        </a>
-      </article>
 
     </div>
+
+    <div class="referral-grid">
+      <div class="referral-source">Hospitals</div>
+      <div class="referral-source">Case Managers</div>
+      <div class="referral-source">Social Workers</div>
+      <div class="referral-source">Community Organizations</div>
+      <div class="referral-source">Veterans Organizations</div>
+      <div class="referral-source">Healthcare Providers</div>
+      <div class="referral-source">Rehabilitation Facilities</div>
+      <div class="referral-source">Family Members</div>
+      <div class="referral-source">Self-Referrals</div>
+    </div>
+
   </section>
 
   <section class="section">
-    <div class="section-heading">
-      <h2>Veterans Resources</h2>
+
+    <div class="notice notice-red">
+
+      <h2>Housing Only — Important Information</h2>
 
       <p>
-        Support and benefit information for veterans and their families.
+        <strong>
+          Devine Living Solutions provides residential housing only.
+        </strong>
+        We are not a medical, nursing, personal-care, home-health,
+        behavioral-health, therapeutic, rehabilitation, or
+        case-management provider.
       </p>
-    </div>
 
-    <div class="resource-grid">
+      <p>
+        We do not provide medical care, personal care, nursing services,
+        supervision, medication management, behavioral-health services,
+        therapy, case management, transportation, or other direct support services.
+      </p>
 
-      <article class="resource-card">
-        <h3>U.S. Department of Veterans Affairs</h3>
-        <p>
-          Information about healthcare, disability compensation, housing,
-          pensions, and other veteran benefits.
-        </p>
-        <a href="https://www.va.gov/" target="_blank" rel="noopener noreferrer">
-          Visit VA.gov
-        </a>
-      </article>
-
-      <article class="resource-card">
-        <h3>South Carolina Department of Veterans’ Affairs</h3>
-        <p>
-          State-level assistance, advocacy, benefits information,
-          and veteran resources.
-        </p>
-        <a href="https://scdva.sc.gov/" target="_blank" rel="noopener noreferrer">
-          Visit SCDVA.SC.gov
-        </a>
-      </article>
-
-      <article class="resource-card">
-        <h3>Veterans Crisis Line</h3>
-        <p>
-          Confidential crisis support for veterans, service members,
-          National Guard members, and their families.
-        </p>
-        <a href="https://www.veteranscrisisline.net/" target="_blank" rel="noopener noreferrer">
-          Visit VeteransCrisisLine.net
-        </a>
-      </article>
+      <p>
+        Prospective residents who require services beyond housing
+        and the household amenities described on this website must
+        arrange those services separately through independent
+        third-party providers.
+      </p>
 
     </div>
+
   </section>
 
   <section class="section">
-    <div class="section-heading">
-      <h2>Mental Health and Recovery Resources</h2>
+
+    <div class="card">
+
+      <h2>Housing Referral Information</h2>
 
       <p>
-        Behavioral-health, crisis-support, and substance-use resources.
+        Complete the form below. When you select
+        <strong>Create Referral Email</strong>, your email application
+        will open with the referral details addressed to
+        <strong>referrals@devinelivingsolutions.com</strong>.
       </p>
+
+      <p class="hint">
+        Please do not include full medical records, Social Security numbers,
+        banking information, detailed diagnoses, or other highly sensitive
+        personal information in this form.
+      </p>
+
+      <form id="referralForm">
+
+        <fieldset>
+
+          <legend>Referrer Information</legend>
+
+          <div class="form-grid">
+
+            <div>
+              <label for="referrerName">Your full name *</label>
+              <input id="referrerName" type="text" required>
+            </div>
+
+            <div>
+              <label for="organization">Organization</label>
+              <input id="organization" type="text">
+            </div>
+
+            <div>
+              <label for="referrerPhone">Phone number *</label>
+              <input id="referrerPhone" type="tel" required>
+            </div>
+
+            <div>
+              <label for="referrerEmail">Email address *</label>
+              <input id="referrerEmail" type="email" required>
+            </div>
+
+            <div>
+              <label for="referralRelationship">
+                Relationship to prospective resident
+              </label>
+
+              <input id="referralRelationship" type="text">
+            </div>
+
+            <div>
+
+              <label for="referralSource">Referral source *</label>
+
+              <select id="referralSource" required>
+                <option value="">Select one</option>
+                <option>Hospital</option>
+                <option>Case Manager</option>
+                <option>Social Worker</option>
+                <option>Community Organization</option>
+                <option>Veterans Organization</option>
+                <option>Healthcare Provider</option>
+                <option>Rehabilitation Facility</option>
+                <option>Family Member</option>
+                <option>Self-Referral</option>
+                <option>Other</option>
+              </select>
+
+            </div>
+
+          </div>
+
+        </fieldset>
+
+        <fieldset>
+
+          <legend>Prospective Resident Information</legend>
+
+          <div class="form-grid">
+
+            <div>
+              <label for="residentName">Resident name *</label>
+              <input id="residentName" type="text" required>
+            </div>
+
+            <div>
+              <label for="residentAge">Age</label>
+              <input id="residentAge" type="number" min="18">
+            </div>
+
+            <div>
+              <label for="currentCity">Current city *</label>
+              <input id="currentCity" type="text" required>
+            </div>
+
+            <div>
+              <label for="currentState">Current state *</label>
+              <input id="currentState" type="text" required>
+            </div>
+
+            <div>
+
+              <label for="demographic">Housing population *</label>
+
+              <select id="demographic" required>
+                <option value="">Select one</option>
+                <option>Senior</option>
+                <option>Veteran</option>
+                <option>Adult With Physical Disability</option>
+                <option>Adult With Intellectual or Developmental Disability</option>
+                <option>Individual in Recovery</option>
+                <option>Returning Citizen</option>
+                <option>Low-Income Adult</option>
+                <option>Adult With Special Needs</option>
+                <option>Other</option>
+              </select>
+
+            </div>
+
+            <div>
+              <label for="moveInDate">Desired move-in date</label>
+              <input id="moveInDate" type="date">
+            </div>
+
+            <div>
+
+              <label for="placementType">Housing requested</label>
+
+              <select id="placementType">
+                <option value="">Select one</option>
+                <option>Short-Term</option>
+                <option>Long-Term</option>
+                <option>Permanent</option>
+                <option>Not Sure</option>
+              </select>
+
+            </div>
+
+            <div>
+
+              <label for="funding">Funding or payment source</label>
+
+              <input
+                id="funding"
+                type="text"
+                placeholder="Example: SSI, private pay, agency funding"
+              >
+
+            </div>
+
+            <div>
+
+              <label for="mobility">
+                Mobility or accessibility considerations
+              </label>
+
+              <select id="mobility">
+                <option value="">Select one</option>
+                <option>No mobility aid reported</option>
+                <option>Uses cane</option>
+                <option>Uses walker</option>
+                <option>Uses wheelchair</option>
+                <option>Other accessibility consideration</option>
+                <option>Unsure</option>
+              </select>
+
+            </div>
+
+            <div>
+
+              <label for="outsideServices">
+                Outside services currently arranged
+              </label>
+
+              <select id="outsideServices">
+                <option value="">Select one</option>
+                <option>None reported</option>
+                <option>Yes</option>
+                <option>Not yet arranged</option>
+                <option>Unsure</option>
+              </select>
+
+            </div>
+
+            <div class="full-width">
+
+              <label for="housingNeeds">
+                Housing needs and outside services currently in place
+              </label>
+
+              <textarea
+                id="housingNeeds"
+                placeholder="Briefly describe the prospective resident's housing needs, preferred housing timeframe, shared-living considerations, and any independent outside services already arranged."
+              ></textarea>
+
+            </div>
+
+            <div class="full-width">
+
+              <label for="householdConsiderations">
+                Shared-living or household considerations
+              </label>
+
+              <textarea
+                id="householdConsiderations"
+                placeholder="Share only information necessary to help determine whether the prospective resident may be suitable for a shared residential environment."
+              ></textarea>
+
+            </div>
+
+            <div class="full-width">
+
+              <label for="additionalNotes">Additional housing-related information</label>
+
+              <textarea id="additionalNotes"></textarea>
+
+            </div>
+
+          </div>
+
+        </fieldset>
+
+        <div class="checkbox-row">
+
+          <input id="consent" type="checkbox" required>
+
+          <label for="consent">
+            I confirm that I have permission to share this information
+            for housing-referral and housing-review purposes.
+          </label>
+
+        </div>
+
+        <div class="checkbox-row">
+
+          <input id="housingAcknowledgment" type="checkbox" required>
+
+          <label for="housingAcknowledgment">
+            I understand that Devine Living Solutions provides housing only
+            and does not provide medical care, personal care, nursing,
+            supervision, medication management, behavioral-health services,
+            case management, transportation, or other direct support services.
+          </label>
+
+        </div>
+
+        <div class="button-row">
+
+          <button class="button-primary" type="submit">
+            Create Referral Email
+          </button>
+
+          <button class="button-light" type="reset">
+            Clear Form
+          </button>
+
+        </div>
+
+      </form>
+
     </div>
 
-    <div class="resource-grid">
+    <div class="email-card">
 
-      <article class="resource-card">
-        <h3>South Carolina Department of Mental Health</h3>
-        <p>
-          Information about community mental-health services,
-          treatment locations, and support programs.
-        </p>
-        <a href="https://www.scdmh.org/" target="_blank" rel="noopener noreferrer">
-          Visit SCDMH.org
-        </a>
-      </article>
-
-      <article class="resource-card">
-        <h3>SAMHSA National Helpline</h3>
-        <p>
-          Treatment referrals and information for mental-health
-          and substance-use concerns.
-        </p>
-        <a href="https://www.samhsa.gov/find-help/national-helpline" target="_blank" rel="noopener noreferrer">
-          Visit SAMHSA.gov
-        </a>
-      </article>
-
-      <article class="resource-card">
-        <h3>988 Suicide & Crisis Lifeline</h3>
-        <p>
-          Call or text 988 for crisis support from trained counselors.
-        </p>
-        <a href="https://988lifeline.org/" target="_blank" rel="noopener noreferrer">
-          Visit 988Lifeline.org
-        </a>
-      </article>
-
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="section-heading">
-      <h2>Housing and Community Assistance</h2>
+      <h2>Submit Housing Referral Information by Email</h2>
 
       <p>
-        Housing, homelessness-prevention, and local support resources.
+        You may also email housing referral information or appropriate
+        supporting documents to:
       </p>
-    </div>
-
-    <div class="resource-grid">
-
-      <article class="resource-card">
-        <h3>HUD Housing Resources</h3>
-        <p>
-          Information about rental assistance, public housing,
-          housing counseling, and homelessness resources.
-        </p>
-        <a href="https://www.hud.gov/" target="_blank" rel="noopener noreferrer">
-          Visit HUD.gov
-        </a>
-      </article>
-
-      <article class="resource-card">
-        <h3>South Carolina Housing</h3>
-        <p>
-          Information about affordable housing, rental assistance,
-          homeownership, and housing programs.
-        </p>
-        <a href="https://schousing.com/" target="_blank" rel="noopener noreferrer">
-          Visit SCHousing.com
-        </a>
-      </article>
-
-      <article class="resource-card">
-        <h3>United Way 211</h3>
-        <p>
-          Search for local food, housing, transportation, healthcare,
-          and emergency-assistance resources.
-        </p>
-        <a href="https://www.211.org/" target="_blank" rel="noopener noreferrer">
-          Visit 211.org
-        </a>
-      </article>
-
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="cta-section">
-      <h2>Need Help With Housing Placement?</h2>
 
       <p>
-        Contact Devine Living Solutions or submit a referral for review.
+        <a href="mailto:referrals@devinelivingsolutions.com">
+          referrals@devinelivingsolutions.com
+        </a>
       </p>
 
-      <div class="button-row">
-        <a class="button button-secondary" href="referral.html">
-          Submit a Referral
-        </a>
+      <p>
+        Please avoid sending highly sensitive personal or medical information
+        unless you are using an appropriately secure method approved by
+        your organization.
+      </p>
 
-        <a class="button button-primary" href="contact.html">
-          Contact Us
-        </a>
-      </div>
+      <a
+        class="button button-primary"
+        href="mailto:referrals@devinelivingsolutions.com?subject=Housing%20Referral%20-%20Devine%20Living%20Solutions"
+      >
+        Start a Referral Email
+      </a>
+
     </div>
+
   </section>
 
 </main>
 
 <footer>
+
   <div class="footer-inner">
+
     <div>
+
       <h3>Devine Living Solutions</h3>
 
       <p>
-        Supportive, all-inclusive, non-medical group housing for adults in
-        Columbia, South Carolina and surrounding communities.
+        Residential group housing for adults in Columbia, South Carolina
+        and surrounding communities. Housing only; direct care and
+        support services are not provided.
       </p>
+
     </div>
 
     <div>
+
       <h3>Quick Links</h3>
 
       <div class="footer-links">
-        <a href="services.html">Services</a>
+        <a href="services.html">Housing &amp; Amenities</a>
         <a href="demographics.html">Who We Serve</a>
-        <a href="our-care.html">Our Care</a>
+        <a href="our-care.html">Our Housing</a>
         <a href="faq.html">Frequently Asked Questions</a>
         <a href="resources.html">Resources</a>
       </div>
+
     </div>
 
     <div>
+
       <h3>Contact</h3>
 
       <div class="footer-links">
-        <a href="tel:18035001901">803-500-1901</a>
+
+        <a href="tel:18035001901">
+          803-500-1901
+        </a>
 
         <a href="mailto:info@devinelivingsolutions.com">
           info@devinelivingsolutions.com
         </a>
 
-        <a href="referral.html">Submit a Referral</a>
+        <a href="referral.html">
+          Submit a Referral
+        </a>
+
       </div>
+
     </div>
+
   </div>
 
   <div class="copyright">
     &copy; 2026 Devine Living Solutions. All rights reserved.
   </div>
+
 </footer>
+
+<script>
+  document
+    .getElementById('referralForm')
+    .addEventListener('submit', function (event) {
+      event.preventDefault();
+
+      if (!this.reportValidity()) {
+        return;
+      }
+
+      const value = (id) => {
+        const element = document.getElementById(id);
+        return element ? element.value.trim() : '';
+      };
+
+      const residentName = value('residentName');
+
+      const subject = encodeURIComponent(
+        'New Housing Referral - ' + (residentName || 'Prospective Resident')
+      );
+
+      const bodyLines = [
+        'DEVINE LIVING SOLUTIONS - HOUSING REFERRAL',
+        '',
+        'REFERRER INFORMATION',
+        'Name: ' + value('referrerName'),
+        'Organization: ' + value('organization'),
+        'Phone: ' + value('referrerPhone'),
+        'Email: ' + value('referrerEmail'),
+        'Relationship: ' + value('referralRelationship'),
+        'Referral Source: ' + value('referralSource'),
+        '',
+        'PROSPECTIVE RESIDENT INFORMATION',
+        'Resident Name: ' + residentName,
+        'Age: ' + value('residentAge'),
+        'Current City: ' + value('currentCity'),
+        'Current State: ' + value('currentState'),
+        'Housing Population: ' + value('demographic'),
+        'Desired Move-In Date: ' + value('moveInDate'),
+        'Housing Requested: ' + value('placementType'),
+        'Funding or Payment Source: ' + value('funding'),
+        'Mobility or Accessibility Considerations: ' + value('mobility'),
+        'Outside Services Currently Arranged: ' + value('outsideServices'),
+        '',
+        'HOUSING NEEDS AND OUTSIDE SERVICES CURRENTLY IN PLACE',
+        value('housingNeeds'),
+        '',
+        'SHARED-LIVING OR HOUSEHOLD CONSIDERATIONS',
+        value('householdConsiderations'),
+        '',
+        'ADDITIONAL HOUSING-RELATED INFORMATION',
+        value('additionalNotes'),
+        '',
+        'The referrer confirmed permission to share this information for housing-referral purposes.',
+        'The referrer acknowledged that Devine Living Solutions provides housing only and does not provide direct care or support services.'
+      ];
+
+      const body = encodeURIComponent(bodyLines.join('\n'));
+
+      window.location.href =
+        'mailto:referrals@devinelivingsolutions.com?subject=' +
+        subject +
+        '&body=' +
+        body;
+    });
+</script>
 
 </body>
 </html>
